@@ -17,7 +17,7 @@ This project was built as a demonstration of core frontend web development skill
 
 ## 🚀 Live Preview
 
-[🌐 Click here to preview the app live](#) *(Replace this with your deployed link)*
+file:///Users/shekhar/Downloads/bbanudeep/budget-tracker/index.html
 
 ---
 
