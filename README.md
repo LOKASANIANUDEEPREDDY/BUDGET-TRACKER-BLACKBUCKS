@@ -87,7 +87,8 @@ No server or build tool needed. The app is fully static and runs directly in you
 
 | Dashboard View                                                         | Add Transaction Modal                                            |
 | ---------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| ![Dashboard](https://www.linkpicture.com/q/budget-tracker-preview.png) | ![Modal](https://www.linkpicture.com/q/budget-tracker-modal.png) |
+| ![Dashboard](<img width="704" alt="Screenshot 2025-05-26 at 16 35 40" src="https://github.com/user-attachments/assets/4518e450-92c7-4332-b6d1-db545cdb83d3" />
+) | ![Modal](https://www.linkpicture.com/q/budget-tracker-modal.png) |
 
 ---
 
