@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget Tracker</title>
+  <!-- Chart.js for charts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="icon">💰</span>
+      </div>
+      <div>
+        <h1>Budget Tracker</h1>
+        <p>Manage your finances with ease</p>
+      </div>
+      <button id="btn-show-form" class="btn-add">
+        + Add Transaction
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Stats Cards -->
+    <section class="stats-grid">
+      <div class="card">
+        <p>Total Balance</p>
+        <h2 id="stat-balance">$0.00</h2>
+      </div>
+      <div class="card">
+        <p>Total Income</p>
+        <h2 id="stat-income">$0.00</h2>
+      </div>
+      <div class="card">
+        <p>Total Expenses</p>
+        <h2 id="stat-expenses">$0.00</h2>
+      </div>
+      <div class="card">
+        <p>Savings Rate</p>
+        <h2 id="stat-savings">0%</h2>
+      </div>
+    </section>
+
+    <!-- Charts -->
+    <section class="charts-grid">
+      <div class="chart-card">
+        <h3>Expense Breakdown</h3>
+        <canvas id="chart-pie"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Monthly Trend</h3>
+        <canvas id="chart-line"></canvas>
+      </div>
+    </section>
+
+    <!-- Budget Overview -->
+    <section class="budget-overview">
+      <div class="overview-header">
+        <h3>Budget Overview</h3>
+        <button id="btn-toggle-budget">Hide Details</button>
+      </div>
+      <div id="budget-details" class="budget-grid">
+        <!-- JS will inject category cards here -->
+      </div>
+    </section>
+
+    <!-- Transactions -->
+    <section class="transactions-section">
+      <div class="transactions-header">
+        <h3>Recent Transactions</h3>
+        <div class="filters">
+          <input type="text" id="search" placeholder="Search..." />
+          <select id="filter-type">
+            <option value="all">All</option>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+          <select id="filter-period">
+            <option value="week">This Week</option>
+            <option value="month" selected>This Month</option>
+            <option value="year">This Year</option>
+          </select>
+        </div>
+      </div>
+      <ul id="transactions-list" class="transactions-list"></ul>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div id="modal-content" class="modal-content">
+      <h3>Add New Transaction</h3>
+      <form id="transaction-form">
+        <div class="form-row">
+          <label>Type</label>
+          <select id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>Amount</label>
+          <input type="number" id="amount" step="0.01" required />
+        </div>
+        <div class="form-row">
+          <label>Category</label>
+          <select id="category">
+            <!-- JS will populate -->
+          </select>
+        </div>
+        <div class="form-row">
+          <label>Description</label>
+          <input type="text" id="description" required />
+        </div>
+        <div class="form-row">
+          <label>Date</label>
+          <input type="date" id="date" />
+        </div>
+        <div class="form-actions">
+          <button type="button" id="btn-cancel">Cancel</button>
+          <button type="submit">Add Transaction</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Link to JS -->
+  <script src="js/script.js"></script>
+  <script>
+    // Modal close logic
+    const modal = document.getElementById('modal');
+    const form = document.getElementById('transaction-form');
+    const modalContent = document.getElementById('modal-content');
+
+    modal.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      form.reset();
+    });
+    modalContent.addEventListener('click', e => e.stopPropagation());
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        modal.classList.add('hidden');
+        form.reset();
+      }
+    });
+  </script>
+</body>
+</html>

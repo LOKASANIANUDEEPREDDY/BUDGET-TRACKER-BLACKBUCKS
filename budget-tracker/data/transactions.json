@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "description": "Grocery shopping",
+        "amount": 50.75,
+        "date": "2023-10-01",
+        "category": "Food"
+    },
+    {
+        "id": 2,
+        "description": "Monthly subscription",
+        "amount": 9.99,
+        "date": "2023-10-05",
+        "category": "Utilities"
+    },
+    {
+        "id": 3,
+        "description": "Gasoline",
+        "amount": 40.00,
+        "date": "2023-10-10",
+        "category": "Transport"
+    },
+    {
+        "id": 4,
+        "description": "Dinner out",
+        "amount": 75.00,
+        "date": "2023-10-15",
+        "category": "Food"
+    },
+    {
+        "id": 5,
+        "description": "Online course",
+        "amount": 120.00,
+        "date": "2023-10-20",
+        "category": "Education"
+    }
+]
