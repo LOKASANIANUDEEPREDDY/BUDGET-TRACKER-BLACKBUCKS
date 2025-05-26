@@ -3,8 +3,6 @@
 
 > A simple, stylish and interactive tool to help you manage your income and expenses efficiently. Built with modern web technologies to offer a seamless experience.
 
-![Budget Tracker Demo](https://www.linkpicture.com/q/budget-tracker-preview.png)
-
 ---
 
 ## 📌 About the Project
@@ -12,12 +10,6 @@
 The **Budget Tracker Web App** is a personal finance management tool designed to allow users to track their incomes, categorize expenses, visualize financial trends, and monitor savings—all from an intuitive and responsive dashboard.
 
 This project was built as a demonstration of core frontend web development skills, UI/UX design, and basic data handling using browser storage.
-
----
-
-## 🚀 Live Preview
-
-file:///Users/shekhar/Downloads/bbanudeep/budget-tracker/index.html
 
 ---
 
