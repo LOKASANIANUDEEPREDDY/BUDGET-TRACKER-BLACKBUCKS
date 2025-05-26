@@ -88,7 +88,7 @@ No server or build tool needed. The app is fully static and runs directly in you
 | Dashboard View                                                         | Add Transaction Modal                                            |
 | ---------------------------------------------------------------------- | ---------------------------------------------------------------- |
 | ![Dashboard](<img width="704" alt="Screenshot 2025-05-26 at 16 35 40" src="https://github.com/user-attachments/assets/4518e450-92c7-4332-b6d1-db545cdb83d3" />
-) | ![Modal](https://www.linkpicture.com/q/budget-tracker-modal.png) |
+) 
 
 ---
 
@@ -122,7 +122,7 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 ## 🙋‍♂️ Author
 
 Developed by **\[L.ANUDEEPREDDY]**
-📫 Reach out via [your.email@example.com](anudeep.22bce8124@vitapstudent.ac.in)
+📫 Reach out via [anudeep.22bce8124@vitapstudent.ac.in]
 🔗 [GitHub Profile]([https://github.com/yourusername](https://github.com/LOKASANIANUDEEPREDDY))
 
 ---
